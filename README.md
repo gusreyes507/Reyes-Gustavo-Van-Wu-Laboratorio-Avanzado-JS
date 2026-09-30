@@ -9,7 +9,7 @@
 
 ## Enlaces
 Tarea Formularios: https://gusreyes507.github.io/Reyes-Gustavo-Van-Wu-Laboratorio-Avanzado-JS/Inscripcion/
-Lab-dom:
+Lab-dom: https://github.com/gusreyes507/Reyes-Gustavo-Van-Wu-Laboratorio-Avanzado-JS
 
 ## Capturas
 ### Validación de datos incorrectos
