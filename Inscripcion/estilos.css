@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f1ecf8;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5a3d8e;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+label,
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6c4ab6;
+    box-shadow: 0 0 4px rgba(108, 74, 182, 0.3);
+    background-color: white;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background-color: #faf8fd;
+}
+
+fieldset legend {
+    color: #5a3d8e;
+}
+
+fieldset label {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+fieldset input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #6c4ab6;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #563895;
+}
+
+.error {
+    margin: 5px 0 0;
+    color: #d00000;
+    font-size: 14px;
+}
+
+.fuerza {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#comentarios-contador {
+    text-align: right;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#confirmacion {
+    margin-top: 25px;
+}
+
+.tarjeta-confirmacion {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta-confirmacion h2 {
+    margin-top: 0;
+    color: #6c4ab6;
+}
+
+.tarjeta-confirmacion p {
+    margin: 8px 0;
+}
+
+[aria-invalid="true"] {
+    border: 2px solid #d00000;
+    background-color: #fff7f7;
+}
+
+[hidden] {
+    display: none;
+}

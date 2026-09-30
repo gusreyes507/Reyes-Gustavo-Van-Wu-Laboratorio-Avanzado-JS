@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Facultad de Ingeniería de Sistemas Computacionales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>Formulario de Inscripción</h1>
+
+    <form id="inscripcion" novalidate>
+
+        <!-- Nombre completo -->
+        <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" aria-describedby="nombre-error">
+            <p id="nombre-error" class="error" aria-live="polite"></p>
+        </div>
+
+        <!-- Cédula -->
+        <div class="campo">
+            <label for="cedula">Cédula</label>
+            <input id="cedula" name="cedula" type="text" aria-describedby="cedula-error">
+            <p id="cedula-error" class="error" aria-live="polite"></p>
+        </div>
+
+        <!-- Correo -->
+        <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" autocomplete="email" aria-describedby="correo-error">
+            <p id="correo-error" class="error"aria-live="polite"></p>
+        </div>
+
+        <!-- Celular -->
+        <div class="campo">
+            <label for="celular">Celular</label>
+            <input id="celular" name="celular" type="tel" autocomplete="tel" aria-describedby="celular-error">
+            <p id="celular-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Fecha de nacimiento -->
+        <div class="campo">
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input id="fechaNacimiento" name="fechaNacimiento" type="date" aria-describedby="fechaNacimiento-error">
+            <p id="fechaNacimiento-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Curso -->
+        <div class="campo">
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso" aria-describedby="curso-error">
+                <option value="">Selecciona un curso</option>
+                <option value="ingenieria-web">Ingeniería Web</option>
+                <option value="redes-de-computadoras">Redes de Computadoras</option>
+                <option value="ingenieria-ambiental">Ingeniería Ambiental</option>
+                <option value="sistemas-operativos">Sistemas Operativos</option>
+            </select>
+            <p id="curso-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Modalidad -->
+        <fieldset>
+            <legend>Modalidad</legend>
+            <label>
+                <input type="radio" name="modalidad" value="presencial">Presencial
+            </label>
+            <label>
+                <input type="radio" name="modalidad" value="virtual">Virtual
+            </label>
+            <p id="modalidad-error" class="error" aria-live="polite"></p>
+        </fieldset>
+
+        <!-- Sede -->
+        <div class="campo" id="campo-sede" hidden>
+            <label for="sede">Sede</label>
+            <select id="sede" name="sede" aria-describedby="sede-error">
+                <option value="">Selecciona una sede</option>
+                <option value="ciudad-panama">Ciudad de Panamá</option>
+                <option value="david">David</option>
+                <option value="santiago">Santiago</option>
+            </select>
+            <p id="sede-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Contraseña -->
+        <div class="campo">
+            <label for="clave">Contraseña</label>
+            <input id="clave" name="clave" type="password" aria-describedby="clave-error clave-fuerza">
+            <p id="clave-fuerza" class="fuerza" aria-live="polite">Fuerza: —</p>
+            <p id="clave-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Confirmar contraseña -->
+        <div class="campo">
+            <label for="clave2">Confirmar contraseña</label>
+            <input id="clave2" name="clave2" type="password" aria-describedby="clave2-error">
+            <p id="clave2-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Comentarios -->
+        <div class="campo">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" maxlength="200" aria-describedby="comentarios-error comentarios-contador"></textarea>
+            <p id="comentarios-contador">0 / 200</p>
+            <p id="comentarios-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Términos -->
+        <div class="campo">
+            <label>
+                <input id="terminos" name="terminos" type="checkbox" aria-describedby="terminos-error">Acepto los términos y condiciones
+            </label>
+            <p id="terminos-error" class="error" aria-live="polite"></p>
+        </div>
+
+
+        <!-- Botón -->
+        <button type="submit">
+            Inscribirme
+        </button>
+
+    </form>
+
+
+    <!-- Confirmación -->
+    <section
+        id="confirmacion"
+        aria-live="polite"
+    ></section>
+
+
+    <script src="validacion.js" defer></script>
+</body>
+</html>
