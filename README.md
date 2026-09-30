@@ -8,6 +8,8 @@
   - Van Wu
 
 ## Enlaces
+Tarea Formularios: https://gusreyes507.github.io/Reyes-Gustavo-Van-Wu-Laboratorio-Avanzado-JS/Inscripcion/
+Lab-dom:
 
 ## Capturas
 ### Validación de datos incorrectos
